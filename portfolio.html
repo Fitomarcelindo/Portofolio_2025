@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.5.0/firebase-database.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portofolio Fitto Martcellindo</title>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCmmLgr0ETSXb5p8GW1WjIPZG4zq940lJE",
+          authDomain: "portofolio-web-f6267.firebaseapp.com",
+          projectId: "portofolio-web-f6267",
+          storageBucket: "portofolio-web-f6267.firebasestorage.app",
+          messagingSenderId: "933133942071",
+          appId: "1:933133942071:web:facd13569808c312bfeeb2"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="https://www.linkedin.com/in/fitto-martcellindo/" class="nav__logo">Fitto Martcellindo</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#Home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#service" class="nav__link">Services</a></li>
+                    <li class="nav__item"><a href="#mywork" class="nav__link">My Work</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Android Developer</span> </h1>
+
+                <a href="#" class="button">Contact Me</a>
+            </div>
+
+            <div class="home__img">
+                <img src="images/profile_me.png" alt="">
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="images/profile_2.png" alt="">
+                </div>
+
+                <div>
+                    <p class="about__text">I am an Android developer with approximately 1 year of experience in
+                        developing and creating Android applications. The language I use in the development process is
+                        Kotlin. The tools and technologies I use include Figma, Postman, LiveData, Retrofit, JSON API,
+                        SQL, Firebase, TensorFlow Lite, and Lucid app.
+                        <br>
+                        <br>
+                        In addition to Android development, I also have skills in data analysis and data collection. For
+                        this, I use Python, Streamlit, and familiar tools including Excel and Power BI. My skills and
+                        experience are validated by my GitHub account and the certificates I have received
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== SERVICES =====-->
+        <section class="service section" id="service">
+            <h2 class="section-title">Services</h2>
+
+            <div class="ag-format-container">
+                <div class="ag-courses_box">
+                    <div class="ag-courses_item">
+                        <a href="https://github.com/Fitomarcelindo/HadIRin-Apps" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                Mobile Apps
+                            </div>
+
+                            <div class="ag-courses-item_date-box">
+                                <span class="ag-courses-item_date">
+                                    <p>As a passionate and skilled web designer, I take great pride in creating visually
+                                        stunning, user-friendly, and functional websites.I aim to deliver memorable
+                                        online experiences that leave a lasting impression.</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="https://github.com/Fitomarcelindo/DataAnalyst-Dicoding" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                Data Analyst
+                            </div>
+
+                            <div class="ag-courses-item_date-box">
+                                <span class="ag-courses-item_date">
+                                    <p>With a user-friendly interface, interactive elements, and a focus on visual
+                                        aesthetics, the app will help users make a lasting impression on potential
+                                        clients, collaborators, and employers.</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="ag-courses_item">
+                        <a href="https://www.kaggle.com/fittomarcel" class="ag-courses-item_link">
+                            <div class="ag-courses-item_bg"></div>
+
+                            <div class="ag-courses-item_title">
+                                Machine Learning
+                            </div>
+
+                            <div class="ag-courses-item_date-box">
+                                <span class="ag-courses-item_date">
+                                    <p>The primary goal of the UI/UX design is to provide a seamless and intuitive
+                                        experience for visitors to explore the portfolio,get a clear understanding, and
+                                        easily navigate through the showcased projects.</p>
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <!--===== MY WORK =====-->
+        <section class="work section" id="mywork">
+            <h2 class="section-title">My Project</h2>
+
+            <div class="work__container bd-grid">
+                <div class="work__img">
+                    <a href="https://finance.detik.com/berita-ekonomi-bisnis/d-7615400/ciptakan-alat-pendeteksi-hama-tanaman-itpln-juara-1-kompetisi-nasional" class="ag-courses-item_link2">
+                        <img src="images/project1.png" alt="">
+                    </a>
+                </div>
+                <div class="work__img">
+                    <a href="https://web.pln.co.id/media/siaran-pers/2024/10/ciptakan-alat-pendeteksi-hama-tanaman-itpln-raih-juara-1-kompetisi-inovasi-antar-kampus-se-indonesias" class="ag-courses-item_link2">
+                        <img src="images/project2.png" alt="">
+                    </a>
+                </div>
+                <div class="work__img">
+                    <a href="https://renbang.itpln.ac.id/pemeringkatan-itpln/#1734939001211-b681f6b5-0e5b" class="ag-courses-item_link2">
+                        <img src="images/project3.png" alt="">
+                    </a>
+                </div>
+                <div class="work__img">
+                    <a href="https://github.com/Fitomarcelindo/HadIRin-Apps" class="ag-courses-item_link2">
+                        <img src="images/project4.png" alt="">
+                    </a>
+                </div>
+                <div class="work__img">
+                    <a href="https://github.com/Fitomarcelindo/Apps-Monas" class="ag-courses-item_link2">
+                        <img src="images/project5.png" alt="">
+                    </a>
+                </div>
+                <div class="work__img">
+                    <a href="https://app.powerbi.com/view?r=eyJrIjoiYTZkODdjNDItNzgyNC00NDVkLThlNDEtNDU4MGYxMDA2NTcyIiwidCI6IjdiMzg4ZDE4LTE5MDAtNDE4Yy1hNWQzLWUyOGQ3YTlhMzhlNiIsImMiOjEwfQ%3D%3D" class="ag-courses-item_link2">
+                        <img src="images/project6.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/fitto-martcellindo/" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="" class="home__social-icon"><i class='bx bxl-behance'></i></a>
+                <a href="https://github.com/Fitomarcelindo" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <div class="contact__container bd-grid">
+                <form action="javascript:void(0);" class="contact__form">
+                    <input type="text" placeholder="Name" class="contact__input" name="name">
+                    <input type="email" placeholder="Email" class="contact__input" name="email">
+                    <textarea placeholder="Message" class="contact__input" name="message" id="" cols="30"
+                        rows="10"></textarea>
+                    <!-- <input type="button" value="Send" class="contact__button button" onclick="submitForm()"> -->
+                    <button type="button" class="contact__button button" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Thanks For Coming</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            🥰✨
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Thanks You For Coming</p>
+        <div class="footer__social">
+            <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/fitomarcel/" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+            <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+        </div>
+        <p>&#169; 2024 Fitto Martcellindo</p>
+    </footer>
+</body>
+
+</html>
